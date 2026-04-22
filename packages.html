@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Packages</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>Trip Trek</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="add-place.html">Add Place</a></li>
+    <li><a href="transport.html">Transport</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="payment.html">Payment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2 class="title">Our Packages</h2>
+
+  <div class="package-grid">
+
+    <!-- Basic -->
+    <div class="package-card">
+      <h3>Basic Package</h3>
+      <p>3 Days</p>
+      <h4>₹5000</h4>
+      <button onclick="selectPackage('Basic Package',5000)">Book Package</button>
+    </div>
+
+    <!-- Premium -->
+    <div class="package-card">
+      <h3>Premium Package</h3>
+      <p>5 Days</p>
+      <h4>₹15000</h4>
+      <button onclick="selectPackage('Premium Package',15000)">Book Package</button>
+    </div>
+
+    <!-- Luxury -->
+    <div class="package-card">
+      <h3>Luxury Package</h3>
+      <p>7 Days</p>
+      <h4>₹30000</h4>
+      <button onclick="selectPackage('Luxury Package',30000)">Book Package</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>© 2026 Trip Trek</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

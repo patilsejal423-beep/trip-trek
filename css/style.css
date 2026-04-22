@@ -399,3 +399,44 @@ footer {
 .destination-card button:hover {
   transform: scale(1.05);
 }
+/* Package Grid */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Card */
+.package-card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Price */
+.package-card h4 {
+  color: #0072ff;
+  margin: 10px 0;
+}
+
+/* Button */
+.package-card button {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.package-card button:hover {
+  transform: scale(1.05);
+}

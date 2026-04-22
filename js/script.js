@@ -144,3 +144,19 @@ function calculateTotal() {
   document.getElementById("finalTotal").innerText =
     "Final Amount: ₹" + total;
 }
+function selectPackage(name, price) {
+  localStorage.setItem("packageName", name);
+  localStorage.setItem("packagePrice", price);
+
+  window.location.href = "payment.html";
+}
+const packageName = localStorage.getItem("packageName");
+const packagePrice = localStorage.getItem("packagePrice");
+
+if (document.getElementById("packageName")) {
+  document.getElementById("packageName").innerText = packageName || "-";
+}
+
+if (document.getElementById("packagePrice")) {
+  document.getElementById("packagePrice").innerText = packagePrice || "0";
+}
