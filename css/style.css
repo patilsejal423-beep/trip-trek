@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+}
+
+nav h1 {
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00c6ff;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+
+  /* FIXED: added ; */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../images/bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Cards */
+.container {
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+button {
+  padding: 10px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #0f2027;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Grid Fix (better spacing + fills page) */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Card */
+.destination-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ✅ IMAGE FIX (FULL IMAGE VISIBLE) */
+.destination-card img {
+  width: 100%;
+  height: 220px;        /* bigger image */
+  object-fit: contain;  /* FULL image visible (no crop) */
+  background: #f5f5f5;  /* fills empty space nicely */
+}
+
+/* Title */
+.destination-card h3 {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* List (places) */
+.destination-card ul {
+  padding: 0 25px 15px;
+}
+
+.destination-card ul li {
+  font-weight: bold;   /* ✅ BOLD text */
+  margin-bottom: 5px;
+}
+
+/* Form Page Background */
+.form-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Card */
+.form-card {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Title */
+.form-card h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.form-card input:focus {
+  border-color: #0072ff;
+  outline: none;
+}
+
+/* Button */
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-card button:hover {
+  transform: scale(1.05);
+}
+/* Popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+/* Show popup */
+.popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Transport Grid (2 up, 2 down) */
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 300px); /* 2 cards per row */
+  justify-content: center;  /* center the grid */
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* Transport Card */
+.transport-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.transport-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image */
+.transport-card img {
+  width: 100%;
+  height: 220px;       /* bigger image */
+  object-fit: cover;
+}
+
+/* Title */
+.transport-card h3 {
+  margin: 10px 0;
+}
+
+/* Price */
+.transport-card p {
+  color: #0072ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* Contact Page Layout */
+.contact-container {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Card */
+.contact-card {
+  background: white;
+  width: 350px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Title */
+.contact-card h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border-color: #0072ff;
+  outline: none;
+}
+
+/* Button */
+.contact-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-card button:hover {
+  transform: scale(1.05);
+}
+/* Popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* About Section */
+.about-section {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Card */
+.about-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+.payment-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-card {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.destination-card button {
+  margin: 10px;
+  padding: 8px 15px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.destination-card button:hover {
+  transform: scale(1.05);
+}

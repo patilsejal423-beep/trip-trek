@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar (only ONE, fixed) -->
+<nav>
+  <h1>Trip Trek</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="add-place.html">Add Place</a></li>
+    <li><a href="transport.html">Transport</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- Contact Form -->
+<div class="contact-container">
+  <div class="contact-card">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+      <input type="text" id="cname" placeholder="Your Name" required>
+      <input type="email" id="cemail" placeholder="Your Email" required>
+      <textarea id="cmsg" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- Popup -->
+<div id="contactPopup" class="popup">
+  <p>✅ Message Sent Successfully!</p>
+</div>
+
+<footer>© 2026 Trip Trek</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
