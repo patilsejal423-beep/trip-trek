@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Trip Trek</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="add-place.html">Add Place</a></li>
+    <li><a href="packages.html">Packages</a></li> 
+    <li><a href="transport.html">Transport</a></li>
+    <li><a href="payment.html">Payment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="payment-container">
+  <div class="payment-card">
+    <h2>Booking Details</h2>
+
+    <p><b>Destination:</b> <span id="place"></span></p>
+    <p><b>Destination Price:</b> ₹<span id="placePrice"></span></p>
+
+    <p><b>Transport Price:</b> ₹<span id="transportPrice"></span></p>
+
+    <input type="number" id="people" placeholder="Number of People">
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+
+    <h3 id="finalTotal"></h3>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

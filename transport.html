@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transport</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Trip Trek</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="add-place.html">Add Place</a></li>
+    <li><a href="transport.html">Transport</a></li>
+    <li><a href="payment.html">Payment</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2 class="title">Choose Transport</h2>
+
+  <div class="transport-grid">
+
+    <div class="transport-card" onclick="selectTransport(1000)">
+      <img src="images/bus.jpg">
+      <h3>Bus</h3>
+      <p>₹1000 / person</p>
+    </div>
+
+    <div class="transport-card" onclick="selectTransport(3000)">
+      <img src="images/train.jpg">
+      <h3>Train</h3>
+      <p>₹3000 / person</p>
+    </div>
+
+    <div class="transport-card" onclick="selectTransport(8000)">
+      <img src="images/flight.jpg">
+      <h3>Flight</h3>
+      <p>₹8000 / person</p>
+    </div>
+
+    <div class="transport-card" onclick="selectTransport(2000)">
+      <img src="images/boat.jpg">
+      <h3>Boat</h3>
+      <p>₹2000 / person</p>
+    </div>
+
+  </div>
+
+  <!-- Button -->
+  <button onclick="goToPayment()">Continue to Payment</button>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
